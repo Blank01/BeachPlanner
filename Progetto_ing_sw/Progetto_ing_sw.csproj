@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2FD63E45-6197-4F8F-A840-F2BA604848AA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Progetto_ing_sw</RootNamespace>
+    <AssemblyName>Progetto_ing_sw</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\ombrellone.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Exceptions\AffittoException.cs" />
+    <Compile Include="Exceptions\DateRangeException.cs" />
+    <Compile Include="Exceptions\PrezzoException.cs" />
+    <Compile Include="Model\Eventi\EventArgsPezziMoved.cs" />
+    <Compile Include="Model\Ordini\ClientImpl.cs" />
+    <Compile Include="Model\Ordini\IPrezzo.cs" />
+    <Compile Include="Model\Ordini\OrdineImpl.cs" />
+    <Compile Include="Model\Ordini\CustomPrezzo.cs" />
+    <Compile Include="Model\Ordini\PrezzoPezzoFisso.cs" />
+    <Compile Include="Model\Pezzi\AreaPrezzoPieno.cs" />
+    <Compile Include="Model\Pezzi\Tenda.cs" />
+    <Compile Include="Model\Selezione.cs" />
+    <Compile Include="Model\ISelezione.cs" />
+    <Compile Include="Model\Pezzi\Ombrellone.cs" />
+    <Compile Include="Model\Spiaggia.cs" />
+    <Compile Include="Persistence\SpiaggiaPersistence.cs" />
+    <Compile Include="Presenter\CreaSpiaggia\CreaSpiaggiaAggiungiAreaPresenter.cs" />
+    <Compile Include="Presenter\CreaSpiaggia\CreaSpiaggiaAggiungiPresenter.cs" />
+    <Compile Include="Presenter\CreaSpiaggia\CreaSpiaggiaGridPresenter.cs" />
+    <Compile Include="Presenter\CreaSpiaggia\CreaSpiaggiaMenuPresenter.cs" />
+    <Compile Include="Presenter\Gestionale\GestionaleGridClientiPresenter.cs" />
+    <Compile Include="Presenter\Gestionale\GestionaleGridOrdiniPresenter.cs" />
+    <Compile Include="Presenter\Gestionale\GestionaleMenuPresenter.cs" />
+    <Compile Include="Presenter\Gestionale\GestionaleStatusStrip.cs" />
+    <Compile Include="Presenter\Gestionale\NewOrder.cs" />
+    <Compile Include="Presenter\SpiaggiaPanelPresenter.cs" />
+    <Compile Include="Presenter\CreaSpiaggia\CreaSpiaggiaPresenter.cs" />
+    <Compile Include="Presenter\CreaSpiaggia\CreaSpiaggiaAreaPresenter.cs" />
+    <Compile Include="Presenter\CreaSpiaggia\CreaSpiaggiaTreeViewPresenter.cs" />
+    <Compile Include="Presenter\Gestionale\GestionalePresenter.cs" />
+    <Compile Include="Presenter\LoaderPresenter.cs" />
+    <Compile Include="Utils\Commands.cs" />
+    <Compile Include="Utils\Drawing.cs" />
+    <Compile Include="Utils\Util.cs" />
+    <Compile Include="View\CreaSpiaggia\AggiungiAreaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CreaSpiaggia\AggiungiAreaForm.Designer.cs">
+      <DependentUpon>AggiungiAreaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CreaSpiaggia\CreaSpiaggiaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CreaSpiaggia\CreaSpiaggiaForm.Designer.cs">
+      <DependentUpon>CreaSpiaggiaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Ordini\ICliente.cs" />
+    <Compile Include="Model\Ordini\IOrdine.cs" />
+    <Compile Include="Model\Pezzi\PezzoFisso.cs" />
+    <Compile Include="Model\Ordini\AffittoImpl.cs" />
+    <Compile Include="Model\Pezzi\Area.cs" />
+    <Compile Include="Utils\DateRange.cs" />
+    <Compile Include="Model\Ordini\IAffitto.cs" />
+    <Compile Include="Model\Pezzi\IPezzo.cs" />
+    <Compile Include="Model\Pezzi\IArea.cs" />
+    <Compile Include="Model\ISpiaggia.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\CreaSpiaggia\AggiungiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CreaSpiaggia\AggiungiForm.Designer.cs">
+      <DependentUpon>AggiungiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\GestionaleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\GestionaleForm.Designer.cs">
+      <DependentUpon>GestionaleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\LoaderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\LoaderForm.Designer.cs">
+      <DependentUpon>LoaderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pezzi\PezzoView.cs" />
+    <Compile Include="View\Pezzi\IPezzoView.cs" />
+    <Compile Include="View\CreaSpiaggia\AreaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CreaSpiaggia\AreaForm.Designer.cs">
+      <DependentUpon>AreaForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="View\CreaSpiaggia\AggiungiAreaForm.resx">
+      <DependentUpon>AggiungiAreaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CreaSpiaggia\CreaSpiaggiaForm.resx">
+      <DependentUpon>CreaSpiaggiaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CreaSpiaggia\AggiungiForm.resx">
+      <DependentUpon>AggiungiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\GestionaleForm.resx">
+      <DependentUpon>GestionaleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CreaSpiaggia\AreaForm.resx">
+      <DependentUpon>AreaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\LoaderForm.resx">
+      <DependentUpon>LoaderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\Progetto_ing_sw.Model.Spiaggia.datasource" />
+    <None Include="Properties\DataSources\Progetto_ing_sw.Presenter.CreaSpiaggiaPresenter.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ombrellone.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

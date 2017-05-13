@@ -1,0 +1,15 @@
+c:\users\filo\documents\visual studio 2015\Projects\Progetto_ing_sw\Progetto_ing_sw\bin\Debug\Progetto_ing_sw.exe.config
+C:\Users\filo\Documents\Visual Studio 2015\Projects\Progetto_ing_sw\Progetto_ing_sw\obj\Debug\Progetto_ing_sw.csprojResolveAssemblyReference.cache
+C:\Users\filo\Documents\Visual Studio 2015\Projects\Progetto_ing_sw\Progetto_ing_sw\bin\Debug\Progetto_ing_sw.exe
+C:\Users\filo\Documents\Visual Studio 2015\Projects\Progetto_ing_sw\Progetto_ing_sw\bin\Debug\Progetto_ing_sw.pdb
+C:\Users\filo\Documents\Visual Studio 2015\Projects\Progetto_ing_sw\Progetto_ing_sw\obj\Debug\Progetto_ing_sw.Properties.Resources.resources
+C:\Users\filo\Documents\Visual Studio 2015\Projects\Progetto_ing_sw\Progetto_ing_sw\obj\Debug\Progetto_ing_sw.csproj.GenerateResource.Cache
+C:\Users\filo\Documents\Visual Studio 2015\Projects\Progetto_ing_sw\Progetto_ing_sw\obj\Debug\Progetto_ing_sw.exe
+C:\Users\filo\Documents\Visual Studio 2015\Projects\Progetto_ing_sw\Progetto_ing_sw\obj\Debug\Progetto_ing_sw.pdb
+C:\Users\filo\documents\visual studio 2015\Projects\Progetto_ing_sw\Progetto_ing_sw\obj\Debug\Progetto_ing_sw.CreaSpiaggia.resources
+C:\Users\filo\documents\visual studio 2015\Projects\Progetto_ing_sw\Progetto_ing_sw\obj\Debug\Progetto_ing_sw.View.AggiungiForm.resources
+C:\Users\filo\documents\visual studio 2015\Projects\Progetto_ing_sw\Progetto_ing_sw\obj\Debug\Progetto_ing_sw.View.AggiungiAreaForm.resources
+C:\Users\filo\documents\visual studio 2015\Projects\Progetto_ing_sw\Progetto_ing_sw\obj\Debug\Progetto_ing_sw.View.AreaForm.resources
+C:\Users\filo\documents\visual studio 2015\Projects\Progetto_ing_sw\Progetto_ing_sw\obj\Debug\Progetto_ing_sw.View.GestionaleForm.resources
+C:\Users\filo\documents\visual studio 2015\Projects\Progetto_ing_sw\Progetto_ing_sw\obj\Debug\Progetto_ing_sw.View.LoaderForm.resources
+C:\Users\filo\documents\visual studio 2015\Projects\Progetto_ing_sw\Progetto_ing_sw\obj\Debug\Progetto_ing_sw.View.VisualizzaPezzo.resources
