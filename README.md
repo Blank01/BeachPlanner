@@ -1,2 +1,2 @@
 # BeachPlanner
-This is my pogect for the Software Engineering exam at Univeristy of Bologna.
+This is my project for the Software Engineering exam at Univeristy of Bologna.
